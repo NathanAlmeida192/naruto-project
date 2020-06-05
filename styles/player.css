@@ -1,0 +1,48 @@
+body {
+    background-image: url("../assets/pattern.png");
+}
+.video-player {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    color: white;
+}
+video {
+    width: 45%;
+}
+.navegacao {
+    width: 45%;
+    display: flex;
+}
+.navegacao a {
+    background-color: black;
+    flex: 1;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+.navegacao a:nth-child(2) {
+    margin: 0px 4px 0px 4px;
+    background-color: red;
+    color: black;
+}
+.navegacao a:nth-child(2):hover {
+    background-color: black;
+    color: red;
+}
+.navegacao a:nth-child(1):hover, 
+.navegacao a:nth-child(3):hover {
+    background-color: red;
+    color: black;
+}
+.navegacao a.disable:hover,
+.navegacao a.disable {
+    background-color: #313234;
+    color: black;
+}
